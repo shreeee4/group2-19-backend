@@ -36,5 +36,5 @@ def process_vulnerabilities():
         result_file.write(result)
 
     # Find and extract lines with "Reference:" and the part after '#' on each line
-    vulnerabilities = re.findall(r'Reference:.*?#(.*?)\s', result)
-    return vulnerabilities
+    vulnerabilitieNames = re.findall(r'Reference:.*?#(.*?)\s', result)
+    return vulnerabilitieNames
