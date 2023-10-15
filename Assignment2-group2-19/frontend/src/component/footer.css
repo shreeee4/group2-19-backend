@@ -1,0 +1,150 @@
+/* Scott Lee (103994562)*/
+/* Padding for elements with class .section__padding */
+.section__padding{ 
+    padding: 4rem 4rem; /*padding of the elements*/
+}
+/* Styling for the footer */
+.footer{
+    background-color: #525264;
+    /*background: transparent !important; !!! USE THIS IF WANT TO USE AN IMAGE FOR BACKGROUND OF THE FOOTER, I.E., A TRANSPARENT FOOTER*/
+    min-height: 47vh; /* Ensures that the footer covers the entire viewport height, it's moreso 47% it's a band-aid fix */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+/* Styling for the main footer container */
+.sl__footer{
+display: flex;
+flex-direction: column;
+}
+/* Styling for the footer links section */
+.sl__footer-links{
+
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-direction: row;
+flex-wrap: wrap; /* Allows items to wrap to the next line when there's not enough space */
+width: 100%;
+text-align: left; 
+margin-bottom: 2rem;
+}
+
+/* Styling for individual footer link divs */
+.sl__footer-links_div{
+width: 150px; 
+margin: 1rem;
+display: flex;
+justify-content: flex-start;
+flex-direction: column; 
+color: white;
+}
+/* Styling for anchor links */
+a{
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+/* Styling for visited anchor links */
+a:visited { 
+    text-decoration: none; 
+   }
+/* Styling for h4 headers within footer link divs */
+.sl__footer-links_div h4{
+
+color: whitesmoke;
+font-size: 14px;
+line-height: 17px;
+margin-bottom: 0.9rem;
+
+}
+/* Styling for paragraphs within footer link divs */
+.sl__footer-links_div p{
+
+font-size: 12px;
+line-height: 15px;
+margin: 0.5rem 0;
+cursor: pointer;
+
+}
+/* Styling for the footer below section */
+.sl__footer-below{
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 0.2rem;
+
+}
+/* Styling for the links in the footer below section */
+.sl__footer-below-links{
+
+display: flex;
+flex-direction: row;
+
+}
+/* Styling for paragraphs within footer below links */
+.sl__footer-below-links p{
+
+    font-size:13px;
+    line-height: 15px;
+    margin-left: 2rem;
+    color:aliceblue;
+    font-weight: 600;
+
+}
+/* Styling for horizontal lines */
+hr{
+
+color:white !important;
+width: 100%;
+
+}
+/* Styling for copyright text within footer */
+.sl__footer-copyright p{
+
+font-size: 13px;
+line-height: 15px;
+color: white;
+font-weight: 600;
+
+}
+/* Media query for screens with a maximum width of 850px */
+@media screen and (max-width: 850px) {
+    .sl__footer-heading h1{
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+/* Media query for screens with a maximum width of 550px */
+@media screen and (max-width: 550px){
+.sl__footer-heading h1{
+font-size: 34px;
+line-height: 42px;
+}
+
+
+.sl__footer-links div{
+margin: 1rem 0;
+}
+.sl__footer-btn p{
+font-size: 14px;
+line-height: 20px;
+}
+.sl__footer-below{
+flex-direction: column;
+justify-content: left;
+} 
+.sl__footer-below-Links{
+flex-direction: column;
+}
+.sl__footer-below-links p{
+margin-left: 0rem;
+margin-top: 1rem;
+    }
+}
+/* Media query for screens with a maximum width of 400px */
+@media screen and (max-width: 400px) {
+    .sl__footer-heading h1{
+        font-size: 27px;
+        line-height: 38px;
+    }
+}
