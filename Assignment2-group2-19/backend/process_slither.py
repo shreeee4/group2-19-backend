@@ -14,12 +14,12 @@ def run_slither(command):
         return f"An error occurred: {e}"
 
 
-def process_vulnerabilities():
+def process_vulnerabilities(file_name):
     # List of commands to run
     commands = [
         ['solc-select', 'install', '0.8.4'],
         ['solc-select', 'use', '0.8.4'],
-        ['slither', 'Sample.sol', '--checklist']
+        ['slither', file_name, '--checklist']
     ]
 
     result = ""
